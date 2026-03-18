@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5DC; /* nude */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #FFF8DC; /* cream */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #D4AF37; /* gold */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #D4AF37;
+}
+
+main {
+    min-height: calc(100vh - 140px); /* adjust for header and footer */
+}
+
+.hero {
+    background-image: url('hero-bg.jpg'); /* placeholder */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.featured, .about, .products, .hair-tips, .blog, .ads, .contact {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured h2, .about h1, .products h1, .hair-tips h1, .blog h1, .ads h1, .contact h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #D4AF37;
+    font-size: 36px;
+}
+
+.products-grid, .tips-grid, .blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card, .tip-card, .post-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover, .tip-card:hover, .post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.product-card img, .post-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-card h3, .tip-card h3, .post-card h3 {
+    margin-bottom: 10px;
+    color: #D4AF37;
+}
+
+.product-card p, .tip-card p, .post-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+button, .btn {
+    background: #D4AF37;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background: #B8860B;
+}
+
+.about p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.contact-details {
+    margin-bottom: 30px;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+    margin-top: 20px;
+}
+
+.whatsapp-btn:hover {
+    background: #128C7E;
+}
+
+.ads-section {
+    margin-bottom: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.ads-section h3 {
+    color: #D4AF37;
+    margin-bottom: 15px;
+}
+
+.ads-section p {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #FFF8DC;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
