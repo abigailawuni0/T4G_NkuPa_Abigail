@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nku Pa Hair Products - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
     <header>
@@ -12,55 +12,60 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="hair-tips.html">Hair Tips</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="ads.html">Ads</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/products.html">Products</a></li>
+                <li><a href="pages/hair-tips.html">Hair Tips</a></li>
+                <li><a href="pages/">Blog</a></li>
+                <li><a href="pages/">Ads</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <h1>Healthy Hair, Naturally</h1>
-            <p>Discover the luxury of natural hair care with Nku Pa</p>
+        <section class="hero" id="heroSlideshow" data-images='["images/pexels-abel-kayode-155872537-10850674.jpg", "images/pexels-abel-kayode-155872537-10850704.jpg", "images/pexels-adrienne-andersen-1174503-2661255.jpg", "images/pexels-bruthethe-1850134.jpg"]'>
+            <div class="hero-content">
+                <h1>Healthy Hair, Naturally</h1>
+                <p>Discover the luxury of natural hair care with Nku Pa</p>
+            </div>
+            <div class="hero-dots"></div>
+            <button class="hero-arrow hero-arrow-left" aria-label="Previous slide">❮</button>
+            <button class="hero-arrow hero-arrow-right" aria-label="Next slide">❯</button>
         </section>
         <section class="featured">
             <h2>Featured Products</h2>
             <div class="products-grid">
                 <div class="product-card">
-                    <img src="placeholder.jpg" alt="Hair Oils">
+                    <img src="images/growthoilnew.jpg" alt="Hair Oils">
                     <h3>Hair Oils</h3>
                     <p>Natural oils for silky, healthy hair.</p>
                 </div>
                 <div class="product-card">
-                    <img src="placeholder.jpg" alt="Growth Cream">
+                    <img src="images/oliveoilset.jpg" alt="Growth Cream">
                     <h3>Growth Cream</h3>
                     <p>Promote hair growth with our premium cream.</p>
                 </div>
                 <div class="product-card">
-                    <img src="placeholder.jpg" alt="Shampoo and Conditioner">
+                    <img src="images/shaconnew.jpg" alt="Shampoo and Conditioner">
                     <h3>Shampoo and Conditioner</h3>
                     <p>Gentle cleansing and conditioning duo.</p>
                 </div>
                 <div class="product-card">
-                    <img src="placeholder.jpg" alt="Shea Butter Hair Cream">
+                    <img src="images/curly hair cream.webp" alt="Shea Butter Hair Cream">
                     <h3>Shea Butter Hair Cream</h3>
                     <p>Moisturize and nourish with pure shea butter.</p>
                 </div>
                 <div class="product-card">
-                    <img src="placeholder.jpg" alt="Coconut Hair Cream">
+                    <img src="images/cocconutnew.jpg" alt="Coconut Hair Cream">
                     <h3>Coconut Hair Cream</h3>
                     <p>Deep conditioning with coconut goodness.</p>
                 </div>
                 <div class="product-card">
-                    <img src="placeholder.jpg" alt="Hair Clips">
+                    <img src="images/clipnew.jpg" alt="Hair Clips">
                     <h3>Hair Clips</h3>
                     <p>Elegant clips to style your hair.</p>
                 </div>
                 <div class="product-card">
-                    <img src="placeholder.jpg" alt="Scrunchies">
+                    <img src="images/scrun.webp" alt="Scrunchies">
                     <h3>Scrunchies</h3>
                     <p>Soft and stylish hair ties.</p>
                 </div>
@@ -70,5 +75,6 @@
     <footer>
         <p>&copy; 2023 Nku Pa Hair Products. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
