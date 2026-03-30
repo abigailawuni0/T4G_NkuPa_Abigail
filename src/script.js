@@ -6,6 +6,10 @@ class HeroSlideshow {
         this.currentIndex = 0;
         this.autoPlayInterval = null;
         this.autoPlayDelay = 4000; // 4 seconds between slides
+
+        this.layerA = this.heroElement.querySelector('.hero-bg-a');
+        this.layerB = this.heroElement.querySelector('.hero-bg-b');
+        this.activeLayer = 'a';
         
         this.init();
     }
@@ -31,10 +35,18 @@ class HeroSlideshow {
     }
 
     setBackgroundImage(index) {
-        // Ensure index is within bounds
         this.currentIndex = (index + this.images.length) % this.images.length;
         const imagePath = this.images[this.currentIndex];
-        this.heroElement.style.backgroundImage = `url('${imagePath}')`;
+
+        const nextLayer = this.activeLayer === 'a' ? this.layerB : this.layerA;
+        const currentLayer = this.activeLayer === 'a' ? this.layerA : this.layerB;
+
+        nextLayer.style.backgroundImage = `url('${imagePath}')`;
+        nextLayer.classList.add('active');
+        currentLayer.classList.remove('active');
+
+        this.activeLayer = this.activeLayer === 'a' ? 'b' : 'a';
+
         this.updateDots();
     }
 
