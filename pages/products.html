@@ -24,6 +24,12 @@
     <main>
         <section class="products">
             <h1>Our Products</h1>
+            <div class="search-container">
+                <input type="text" id="product-search" placeholder="Search products..." class="search-input">
+                <button type="button" id="search-btn" class="search-btn" title="Search">🔍</button>
+                <button type="button" id="clear-search" class="clear-search-btn" title="Clear search">✕</button>
+            </div>
+            <div id="search-results-count" class="search-results-count"></div>
             <div class="products-grid">
                 <div class="product-card">
                     <img src="../images/growthoilnew.jpg" alt="Hair Oils">
@@ -106,5 +112,6 @@
             <p>&copy; 2023 Nku Pa Hair Products. All rights reserved.</p>
         </div>
     </footer>
+    <script src="../src/script.js"></script>
 </body>
 </html>
